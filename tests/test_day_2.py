@@ -65,12 +65,12 @@ test_evenly_divisible_checksum_inputs = [
     )
 ]
 
-@pytest.mark.parametrize("test_input,expected", test_checksum_inputs)
+@pytest.mark.parametrize("test_input, expected", test_checksum_inputs)
 def test_calculate_checksum(test_input, expected):
     actual = day_2.calculate_checksum(test_input)
     assert actual == expected
 
-@pytest.mark.parametrize("test_input,expected", test_evenly_divisible_checksum_inputs)
+@pytest.mark.parametrize("test_input, expected", test_evenly_divisible_checksum_inputs)
 def test_calculate_evenly_divisible_checksum(test_input, expected):
     actual = day_2.calculate_evenly_divisible_checksum(test_input)
     assert actual == expected

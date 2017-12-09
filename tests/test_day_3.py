@@ -20,12 +20,12 @@ test_spiral_adj_inputs = [
     (62, 330785),
 ]
 
-@pytest.mark.parametrize("test_input,expected", test_spiral_inputs)
+@pytest.mark.parametrize("test_input, expected", test_spiral_inputs)
 def test_spiral(test_input, expected):
     actual = day_3.spiral(test_input)
     assert actual == expected
 
-@pytest.mark.parametrize("test_input,expected", test_spiral_adj_inputs)
+@pytest.mark.parametrize("test_input, expected", test_spiral_adj_inputs)
 def test_spiral_adj(test_input, expected):
     actual = day_3.spiral_adj(test_input)
     assert actual == expected
