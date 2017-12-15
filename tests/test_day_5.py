@@ -23,7 +23,7 @@ def test_calculate_escape_steps_v2(test_input, expected):
 
 def test_file_escape_steps():
     input_jumps = []
-    with open(os.path.join(THIS_PATH, 'day_5_data.txt')) as handle:
+    with open(os.path.join(THIS_PATH, 'data', 'day_5_data.txt')) as handle:
         for line in handle:
             input_jumps.append(int(line))
     actual = day_5.calculate_escape_steps(input_jumps)

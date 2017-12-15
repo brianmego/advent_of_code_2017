@@ -33,7 +33,7 @@ def test_passphrase(test_input, expected):
 def test_db_passphrases():
     valid_passphrase_count = 0
     invalid_passphrase_count = 0
-    with open(os.path.join(THIS_PATH, 'day_4_data.txt')) as handle:
+    with open(os.path.join(THIS_PATH, 'data', 'day_4_data.txt')) as handle:
         lines = handle.readlines()
     for line in lines:
         if day_4.validate_passphrase(line):
@@ -47,7 +47,7 @@ def test_db_passphrases():
 def test_db_anagrams():
     valid_passphrase_count = 0
     invalid_passphrase_count = 0
-    with open(os.path.join(THIS_PATH, 'day_4_data.txt')) as handle:
+    with open(os.path.join(THIS_PATH, 'data', 'day_4_data.txt')) as handle:
         lines = handle.readlines()
     for line in lines:
         if day_4.validate_passphrase(line, allow_anagrams=False):
